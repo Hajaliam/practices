@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/app.css">
+    <title> | Login Menu |</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="loginForm">
+            <h1>Login</h1>
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username"  onblur="spanDel()">
+            <span class="userValidation__invalid invalid__Div">The username is invalide !</span>
+            <span class="userValidation__valid validDiv">The username is Valide !</span>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" onkeyup="passwordValidation()" onblur="spanDel()">
+            <span class="passValidation__invalid invalid__Div">The password must be more than 8 characters !</span>
+            <span class="passValidation__valid validDiv">The password is valid !</span>
+            <br><br>
+            <button class="button">Log In </button>
+        </div>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+
+</html>

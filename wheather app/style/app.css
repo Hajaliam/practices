@@ -1,0 +1,49 @@
+@font-face {
+    font-family: poppins;
+    src: url(../fonts/Poppins-Regular.ttf) format(truetype);
+}
+*,
+::after,
+::before{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+
+:root{
+    font-size: 10px;
+    font-family: poppins;
+}
+
+body{
+    background-image: none;
+    
+}
+#search__box{
+    padding: 1rem;
+    border-radius: 5px;
+}
+.search__box{
+    width: 40rem;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, .13);
+    backdrop-filter: blur(10px);
+    border-radius: 2rem;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+button{
+    padding: 1rem;
+    border-radius: 5px;
+}

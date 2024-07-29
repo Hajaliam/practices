@@ -1,0 +1,96 @@
+@font-face {
+    font-family: "Poppins";
+    src: url(/fonts/Poppins-Regular.ttf) format(truetype)
+}
+
+*,
+::after,
+::before {
+    margin: 0;
+    border: none;
+    outline: none;
+}
+
+:root {
+    font-size: 10px;
+    --backgroung: #8BC34A;
+    --border: #E0E0E0;
+    --bottun : #689F38 ;
+}
+
+body {
+    background-color: var(--backgroung);
+    font-family: "Poppins";
+
+
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 8rem;
+    
+}
+
+h1,
+label,
+input,
+span {
+    font-family: "Poppins";
+}
+input{
+    padding-left: .5rem;
+}
+h1 {
+    text-align: center;
+    
+}
+
+label {
+    text-align: left;
+    padding-left: .5rem;
+    align-self: flex-start;
+}
+
+input {
+    width: 95%;
+    border: 1px solid var(--border);
+}
+
+.loginForm {
+    min-width: 24rem;
+    background-color: #F5F5F5;
+    padding: 20px;
+    border: 2px solid var(--border);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+span {
+    display: none;
+}
+
+.button {
+    background-color: var(--backgroung);
+    width: 95%;
+    /* border-radius: 5px; */
+    transition: all 80ms ease-in;
+}
+.button:hover{
+    background-color: var(--bottun);
+   
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.invalid__Div{
+    color: red;
+}
+.validDiv{
+    color: #8BC34A;
+}

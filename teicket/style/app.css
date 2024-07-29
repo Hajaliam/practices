@@ -1,0 +1,42 @@
+@font-face {
+    font-family: poppins;
+    src: url(../fonts/Poppins/Poppins-Regular.ttf) format(truetype);
+}
+
+:root{
+    font-size: 10px;
+}
+
+body{
+    background-color: #fafafa;
+}
+
+.container{
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+    border: 2px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    
+}
+.container__childs{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    gap: 2rem;
+}
+.input{
+    width: 20rem;
+}
+.country{
+
+}
+select{
+    width: 20rem;
+}

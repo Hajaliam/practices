@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function User(userName , userAge, userJob){
+            this.name = userName
+            this.age = userAge
+            this.job = userJob
+
+            this.getname = function(){
+                return this.name
+            }
+            this.getage = function(){
+                return this.age
+            }
+            this.getjob = function(){
+                return this.job
+            }
+
+            this.setname = function(newName){
+                this.name = newName
+            }
+            this.setage = function(newAge){
+                this.age = newAge
+            }
+            this.setjob = function(newJob){
+                this.job = newJob
+            }
+        }
+
+        let userAmir = new User("amir",25,"developer")
+        console.log(userAmir);
+        userAmir.setname("Amirali")
+        console.log(userAmir);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
